@@ -10,7 +10,7 @@ export class HospitalService {
 constructor(private _HttpClient:HttpClient) { }
 
 getData():Observable<any>{
-  return this._HttpClient.get('../assets/main.json')
+  return this._HttpClient.get('./assets/main.json')
 }
 
 }
